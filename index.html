@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my_app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+
+    </script>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="controller.js"></script>
+    <script src="controller1.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body ng-controller="my_controller">
+<div class="container-fluid" >
+    <div class="nav navbar">
+        <img style="height: 100px; width: 100px" src="data:image/jpeg;base64,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">
+    </div>
+    <div class="well">
+        <ul>
+            <li class="li1"><a href="#">Menu1</a></li>
+            <li class="li1"><a href="#">Another</a></li>
+            <li class="li1" data-toggle="dropdown"><a href="#">Dropdown<span class="caret"></span> </a>
+
+            </li>
+        </ul>
+    </div>
+    <div>
+        <button type="button" class="btn btn-danger" ng-click = "remove($index)">Delete</button>
+        <button type="button" class="btn btn-primary" ng-click="addFunc()" data-toggle="modal" data-target="#myModal">Add</button>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Column Name</h4>
+                    <input type="text" ng-model="ColumnN" required>
+                </div>
+                <div class="modal-header">
+                    <h4 class="modal-title">Column Type </h4>
+
+                    <select ng-model="ColumnT" required>
+                        <option value="String">String</option>
+                        <option value="Number">Number</option>
+                        <option value="Boolean">Boolean</option>
+                        <option value="Date">Date</option>
+                    </select>
+
+                </div>
+                <div class="modal-header">
+                    <h4 class="modal-title">Editable</h4>
+                    <select ng-model="Editable" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn btn-success" ng-click="add()" value="Save" class="close" data-dismiss="modal">
+                <button type="button" class="close" data-dismiss="modal">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <h2>Column Master</h2>
+        <table class ="table table-bordered table-striped">
+            <tbody>
+            <tr class = "success">
+                <td>Column Name</td>
+                <td>Column Type</td>
+                <td>Editable</td>
+            </tr>
+            <tr ng-repeat="record in info" class = "warning">
+                <td><input type = "checkbox"/>{{record.ColumnN}}</td>
+                <td>{{record.ColumnT}}</td>
+                <td>{{record.Editable}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--<div class="well">
+    <form role="form" id="form" style="display: none">
+        <div class="form-group">
+            <label >ColumnN</label>
+            <input type="text" class="form-control" id="ColumnN" ng-model="ColumnN" required>
+        </div>
+        <div class="form-group">
+            <label>ColumnT</label>
+            <input type="text" class="form-control" id="ColumnT" ng-model="ColumnT" required>
+        </div>
+        <div class="form-group">
+            <label>Editable</label>
+            <input type="text" class="form-control" id="Editable" ng-model="Editable" required>
+        </div>
+
+        <button type="submit" class="btn btn-success" ng-click="add()">Submit</button>
+    </form>
+</div>-->
+<!-- <tr><th>Result Datagrid</th></tr>
+    <tr  class = "success">
+        <td><form><input type = "checkbox"/></form></td>
+        <td ng-repeat="data in info">{{data.ColumnN}}</td>
+    </tr>-->
+
+
+<h2>Result Datagrid</h2>
+<table class ="table table-bordered table-striped" ng-controller="my_controller1">
+    <tbody>
+    <tr class = "success" >
+        <td ng-repeat="record in info">{{record.ColumnN}}</td></tr>
+    <tr class = "warning" ng-repeat="record1 in info1" class="scuccess">
+
+        <td><input type="text" value="{{record1.ColumnX}}"/> </td>
+        <td>{{record1.ColumnY}}</td>
+        <td>
+            <form class="form-horizontal" novalidate name="form" ng-submit="submit()">
+                <div id="date" class="input-append" datetimez ng-model="record1.ColumnZ">
+                    <input data-format="MM-dd-yyyy" type="text" id="input1" name="input1"/>
+          <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+          </span>
+                </div>
+
+        </form>
+        </td>
+        <td><select  ng-model ="ColumnD">
+            <option ng-repeat="country in record1.ColumnD"  value="{{country.id}}">
+                {{country.Option}}
+            </option>
+        </select></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

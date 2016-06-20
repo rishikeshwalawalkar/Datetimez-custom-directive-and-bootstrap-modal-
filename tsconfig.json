@@ -1,0 +1,23 @@
+
+[
+    {
+        "ColumnN" : "COLUMN 1",
+        "ColumnT" : "String",
+        "Editable"    : "Yes"
+    },
+    {
+        "ColumnN" : "COLUMN 2",
+        "ColumnT" : "Number",
+        "Editable"    : "No"
+    },
+    {
+        "ColumnN" : "COLUMN 3",
+        "ColumnT" : "Date",
+        "Editable"    : "Yes"
+    },
+    {
+        "ColumnN" : "COLUMN 4",
+        "ColumnT" : "Boolean",
+        "Editable"    : "Yes"
+    }
+]

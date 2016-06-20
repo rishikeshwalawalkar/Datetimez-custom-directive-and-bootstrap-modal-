@@ -1,0 +1,14 @@
+.li1 {
+    position: relative;
+    display: inline-block;
+    width: 450px;
+
+}
+.li1 ul{
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
